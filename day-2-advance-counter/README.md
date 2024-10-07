@@ -27,14 +27,13 @@ src/
 ├── app/
 │   ├── hooks.ts          # Custom hooks for typed useDispatch and useSelector
 │   ├── store.ts          # Configures the Redux store
-├── components/
-│   └── Counter.tsx       # Main Counter component
 ├── features/
 │   └── counter/
+│       ├── Counter.tsx       # Main Counter component
 │       ├── counterSlice.ts # Redux slice for counter state and reducers
 │       └── index.ts       # Barrel file for the counter slice
-├── index.tsx             # Entry point for React
-└── main.tsx              # App root with global providers
+├── App.tsx             # Entry point for React
+└── index.tsx              # App root with global providers
 ```
 
 ## Getting Started
