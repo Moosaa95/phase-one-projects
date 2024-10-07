@@ -5,3 +5,4 @@ This repository contains a series of small React and React Native projects devel
 
 ### Day-by-Day Projects
 - **[Day 1: Todo List App](./day-1-todo-list)**: Basic Todo List with add, edit, and delete features.
+- **[Day 2: Advanced Counter App](./phase-one/day-2-advanced-counter-app)**: Counter app with increment, decrement, reset features using Redux Toolkit and TypeScript.
