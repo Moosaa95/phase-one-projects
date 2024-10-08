@@ -23,13 +23,16 @@ const WeatherProvider: React.FC<{children: ReactNode}> = ({children}) => {
     const [weather, setWeather] = useState<Weather | null>(null)
     const [error, setError] = useState<string | null>(null)
     const [loading, setLoading] = useState<boolean>(false)
+    const API_KEY = process.env.REACT_APP_WEATHER_API_KEY
 
+    console.log(API_KEY, 'key');
+    
     const fetchWeather = async (city: string) => {
         setLoading(true)
         setError(null)
 
         try {
-            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.REACT_APP_WEATHER_API_KEY}`)
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`)
             const data = await response.json();
             if (data.cod === 200) {
                 const weatherData: Weather = {
